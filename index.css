@@ -1,0 +1,173 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body
+{
+    background: #f7bf07;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.control-me::after {
+    content: "🤖";
+    font-size: 100px;
+    opacity: 0.3;
+}
+
+#check
+{
+    display: none;
+}
+#check:checked ~ .control-me::after {
+    content: "🤖";
+    opacity: 1;
+}
+.control-me:hover::after {
+    opacity: 1;
+    filter: drop-shadow( 0px 10px 10px rgb(234, 3, 3));
+   
+}
+
+h4
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container
+{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+ .text
+{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text h1
+{
+    margin: 0 50px;
+}
+
+progress
+{
+    width: 90%;
+    height: 60px;
+}
+
+.botones
+{
+   width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+
+.boton:hover
+{
+    background: rgb(0, 200, 255);
+    color: #fff;
+}
+.boton
+{
+    width: 250px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+  
+}
+.div
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 15px;
+    background: #fdd807;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+}
+
+.div:hover
+{
+    background: #cbae04;
+    filter: drop-shadow("inset 2px 20px 2px 4px  rgba(0, 0, 0, 0.5)");
+   
+}
+@media (min-width: 950px) and  (max-width: 1120px){
+    .botones
+    {
+        align-items: center;
+    }.boton
+    {
+        font-size: 25px;
+        width: 200px;
+        height: 70px;
+        margin: 2px 0;
+    }
+   
+}
+
+@media screen and (max-width: 940px) {
+    .botones
+    {
+       
+        align-items: center;
+    }.boton
+    {
+        font-size: 22px;
+        width: 140px;
+        height: 70px;
+        margin: 2px 0;
+    }
+    .text h1
+    {
+        margin: 0 30px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .botones
+    {
+        flex-direction: column;
+        align-items: center;
+    }.boton
+    {
+        font-size: 25px;
+        width: 250px;
+        height: 70px;
+        margin: 2px 0;
+    }
+    .text h1
+    {
+        margin: 0 30px;
+        font-size: 20px;
+    }
+}

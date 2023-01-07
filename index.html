@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Points</title>
+</head>
+<body >
+    <h1 id="you_win"></h1>
+    <div class="botones">
+        <button  class="boton" onclick="StartGame()" id="GerateNumber" >New Numbers</button>
+        <button class="boton" id="ShowNumbers" type="button" >Hide Number</button>
+        <label for="check">
+            <h4>AI Bot</h4>
+            <input type="checkbox" id="check" >
+            <div class="control-me" ></div>
+        </label> 
+        <button class="boton" id="ShowMoves" >Show moves</button>
+        <button class="boton"  id="more"  >Circles<br>20</button>   
+    </div>
+    <progress id="file" value="0" >  </progress>
+    <div class="text">
+        <h1 id="score" onclick="CargarJuego()">Score: 0</h1>
+        <h1 id="number">Number: ?</h1>
+        <h1 id="fails">Fails: 0</h1>
+    </div>
+    <div class="container">
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
